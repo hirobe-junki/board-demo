@@ -10,9 +10,14 @@ docker-compose up --build -d
 docker-compose stop
 ```
 
-## node 起動(docker起動後)
+## 依存モジュールインストール(docker起動後)
 ```bash
 docker exec -it board_demo bash
+npm ci
+```
+
+## node 起動(docker起動後)
+```bash
 npm start
 ```
 
